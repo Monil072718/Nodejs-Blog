@@ -10,4 +10,4 @@ const blogSchema = new mongoose.Schema({
 }, { timestamps: true })
 
 const BlogModal = mongoose.model('blog', blogSchema)
-module.exports = BlogModal
+module.exports = BlogModal 

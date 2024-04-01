@@ -5,7 +5,7 @@ const app = express();
 const { connectDb } = require('./database/db');
 const BlogModal = require('./model/blogModal');
 const UserModal = require('./model/userModal');
-
+const session = require('express-session');
 connectDb();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -122,6 +122,6 @@ app.get('/signout', function (req, res) {
     }
 });
 
-app.listen(7500, () => {
-    console.log('Listening on port 7500');
+app.listen(7501, () => {
+    console.log('Listening on port 7501');
 });
